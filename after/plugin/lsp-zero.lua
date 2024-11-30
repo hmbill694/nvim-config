@@ -56,6 +56,14 @@ require'lspconfig'.jsonls.setup {
   capabilities = capabilities,
 }
 
+-- HTML LS
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
+
+-- HTMX LS
+require'lspconfig'.htmx.setup{}
+
 -- DOCKER COMPOSE LS
 require'lspconfig'.docker_compose_language_service.setup{}
 
@@ -124,6 +132,10 @@ require'lspconfig'.volar.setup{
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
 }
 
+-- SQL LS
+require'lspconfig'.sqlls.setup{}
+
+
 
 -- TYPESCRIPT LS 
 require'lspconfig'.ts_ls.setup{
@@ -160,5 +172,7 @@ cmp.setup({
       vim.snippet.expand(args.body)
     end,
   },
-  mapping = cmp.mapping.preset.insert({}),
+  mapping = cmp.mapping.preset.insert({
+    ['<CR>'] = cmp.mapping.confirm({select = false})
+  }),
 })
