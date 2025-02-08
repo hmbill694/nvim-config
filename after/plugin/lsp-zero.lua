@@ -158,6 +158,25 @@ require 'lspconfig'.ts_ls.setup {
 	},
 }
 
+require('lspconfig').rust_analyzer.setup {
+	-- Other Configs ...
+	settings = {
+		["rust-analyzer"] = {
+			-- Other Settings ...
+			procMacro = {
+				ignored = {
+					leptos_macro = {
+						-- optional: --
+						-- "component",
+						"server",
+					},
+				},
+			},
+		},
+	}
+}
+
+
 -- You must make sure volar is setup
 -- e.g. require'lspconfig'.volar.setup{}
 -- See volar's section for more information
