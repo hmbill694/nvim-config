@@ -7,7 +7,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			buffer = args.buf,
 			callback = function()
 				-- 4 + 5
-				vim.lsp.buf.format { async = false, id = args.data.client_id }
+				-- vim.lsp.buf.format { async = false, id = args.data.client_id, filter = function(client)
+				-- 	return client.name ~= "tsserver"
+				-- end }
 			end,
 		})
 	end
