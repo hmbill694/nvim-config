@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 	use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
 	use({ 'nanotech/jellybeans.vim' })
 	use({ 'Rigellute/shades-of-purple.vim' })
+	use { "catppuccin/nvim", as = "catppuccin" }
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 	use { 'kdheepak/lazygit.nvim', requires = { { 'nvim-lua/plenary.nvim' } } }
 	use({ 'tpope/vim-commentary' })
