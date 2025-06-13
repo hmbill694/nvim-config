@@ -11,6 +11,7 @@ local markdown_preview = require("plugins.markdown-preview")
 local catppuccin = require("plugins.catppuccin")
 local blink = require("plugins.blink-cmp")
 local nvim_lspconfig = require("plugins.nvim-lspconfig")
+local vim_helm = require("plugins.vim-helm")
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -26,7 +27,7 @@ require("lazy").setup({
 		blink,
 		nvim_lspconfig,
 		markdown_preview,
-
+		vim_helm
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
