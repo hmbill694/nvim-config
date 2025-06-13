@@ -1,5 +1,26 @@
-require("core.mappings")
-require("core.plugins")
-require("core.commands")
+-- Bootstrap the plugin manager
+require("config.lazy")
 
-vim.wo.number = true
+-- Setup lazy.nvim
+require("mount.mount-lazy-nvim")
+
+-- Init base mappings
+require("mappings.base")
+require("mappings.window")
+require("mappings.lsp")
+require("mappings.clipboard")
+
+-- Register AutoCmds
+-- Attach our LSP Actions
+require("auto-cmds.lsp-attach")
+require("auto-cmds.format-on-save")
+
+-- Plugin Mappings
+require("mappings.telescope")
+require("mappings.markdown-preview")
+
+-- Set Theme
+vim.cmd.colorscheme "catppuccin-macchiato"
+
+vim.opt.signcolumn = 'yes'
+vim.opt.clipboard = "unnamedplus"
