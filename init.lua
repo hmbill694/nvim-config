@@ -24,3 +24,6 @@ vim.cmd.colorscheme "catppuccin-macchiato"
 
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = "unnamedplus"
+vim.opt.number = true
+vim.opt["tabstop"] = 4
+vim.opt["shiftwidth"] = 4
