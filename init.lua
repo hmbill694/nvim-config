@@ -9,6 +9,7 @@ require("mappings.base")
 require("mappings.window")
 require("mappings.lsp")
 require("mappings.clipboard")
+require("mappings.navigation")
 
 -- Register AutoCmds
 -- Attach our LSP Actions
