@@ -14,11 +14,14 @@ require("mappings.navigation")
 -- Register AutoCmds
 -- Attach our LSP Actions
 require("auto-cmds.lsp-attach")
-require("auto-cmds.format-on-save")
+require("auto-cmds.close-quickfix-menu-on-save")
+-- require("auto-cmds.format-on-save")
 
 -- Plugin Mappings
 require("mappings.telescope")
 require("mappings.markdown-preview")
+require("mappings.harpoon")
+require("mappings.git-blame")
 
 -- Set Theme
 vim.cmd.colorscheme "catppuccin-macchiato"
@@ -29,3 +32,4 @@ vim.opt.number = true
 vim.opt.expandtab = true
 vim.opt["tabstop"] = 2
 vim.opt["shiftwidth"] = 2
+vim.opt.scrolloff=20
