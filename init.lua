@@ -15,6 +15,7 @@ require("mappings.navigation")
 -- Attach our LSP Actions
 require("auto-cmds.lsp-attach")
 require("auto-cmds.close-quickfix-menu-on-save")
+require("auto-cmds.trim-trailing-whitespace-on-save")
 -- require("auto-cmds.format-on-save")
 
 -- Plugin Mappings
