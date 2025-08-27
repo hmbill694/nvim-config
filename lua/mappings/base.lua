@@ -1,1 +1,2 @@
-vim.keymap.set("n", "-", vim.cmd.Ex)
+-- Disabling this for now in favor of using oil
+-- vim.keymap.set("n", "-", vim.cmd.Ex)

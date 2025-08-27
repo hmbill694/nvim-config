@@ -24,6 +24,7 @@ require("mappings.telescope")
 require("mappings.markdown-preview")
 require("mappings.harpoon")
 require("mappings.git-blame")
+require("mappings.oil")
 
 -- Set Theme
 vim.cmd.colorscheme "catppuccin-macchiato"

@@ -14,6 +14,7 @@ local nvim_lspconfig = require("plugins.nvim-lspconfig")
 local vim_helm = require("plugins.vim-helm")
 local harpoon = require("plugins.harpoon")
 local git_blame = require("plugins.git-blame")
+local oil = require("plugins.oil")
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -31,7 +32,8 @@ require("lazy").setup({
 		markdown_preview,
 		vim_helm,
     harpoon,
-    git_blame
+    git_blame,
+    oil
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
