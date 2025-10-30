@@ -10,3 +10,9 @@ vim.keymap.set('n', '<leader>gx', '<cmd>lua vim.lsp.buf.format({async = true})<c
 vim.keymap.set('n', '<leader>ga', '<cmd>lua vim.lsp.buf.code_action()<cr>', { desc = 'Code Actions' })
 vim.keymap.set('n', '<leader>ge', "<cmd> lua vim.diagnostic.open_float()<CR>", { desc = 'Show error in popup.' })
 
+-- 2. Register the group with which-key
+local wk = require("which-key")
+
+wk.add({
+  { "<leader>g", group = "LSP actions" },
+})

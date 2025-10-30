@@ -26,3 +26,10 @@ for key, mapping in pairs(mappings) do
   vim.keymap.set('n', '<leader>w' .. key, mapping[1], { noremap = true, silent = true, desc = mapping[2] })
 end
 
+
+-- 2. Register the group with which-key
+local wk = require("which-key")
+
+wk.add({
+  { "<leader>w", group = "Window" },
+})

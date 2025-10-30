@@ -17,3 +17,11 @@ vim.keymap.set("n", "<leader>h9", function() harpoon:list():select(9) end, { des
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<leader>ho", function() harpoon:list():prev() end, { desc = "Go to prev item in harpoon list" })
 vim.keymap.set("n", "<leader>hi", function() harpoon:list():next() end, { desc = "Go to next item in harpoon list" })
+
+
+-- 2. Register the group with which-key
+local wk = require("which-key")
+
+wk.add({
+  { "<leader>h", group = "Harpoon" },
+})
