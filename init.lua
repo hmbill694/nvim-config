@@ -6,7 +6,6 @@ require("mount.mount-lazy-nvim")
 
 -- Init base mappings
 require("mappings.base")
-require("mappings.window")
 require("mappings.lsp")
 require("mappings.clipboard")
 require("mappings.navigation")
