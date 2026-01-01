@@ -26,7 +26,7 @@ require("mappings.git-blame")
 require("mappings.oil")
 
 -- Set Theme
-vim.cmd.colorscheme "catppuccin-macchiato"
+vim.cmd.colorscheme "tokyonight-storm"
 
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = "unnamedplus"
@@ -38,3 +38,5 @@ vim.opt.scrolloff=20
 
 vim.opt["splitbelow"] = true
 vim.opt["splitright"] = true
+
+vim.opt.cmdheight = 0
