@@ -11,6 +11,7 @@ local markdown_preview = require("plugins.markdown-preview")
 local catppuccin = require("plugins.catppuccin")
 local nord = require("plugins.nord")
 local tokoyo_night = require("plugins.tokoyo-night")
+local rose_pine = require("plugins.rose-pine")
 local blink = require("plugins.blink-cmp")
 local nvim_lspconfig = require("plugins.nvim-lspconfig")
 local vim_helm = require("plugins.vim-helm")
@@ -39,7 +40,8 @@ require("lazy").setup({
     git_blame,
     oil,
     lualine,
-    tokoyo_night
+    tokoyo_night,
+    rose_pine
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.

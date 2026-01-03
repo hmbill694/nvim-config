@@ -26,7 +26,7 @@ require("mappings.git-blame")
 require("mappings.oil")
 
 -- Set Theme
-vim.cmd.colorscheme "tokyonight-storm"
+vim.cmd.colorscheme "rose-pine-moon"
 
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = "unnamedplus"
