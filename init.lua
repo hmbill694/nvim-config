@@ -26,6 +26,7 @@ require("mappings.git-blame")
 require("mappings.oil")
 
 -- Set Theme
+vim.opt.termguicolors = true
 vim.cmd.colorscheme "rose-pine-moon"
 
 vim.opt.signcolumn = 'yes'
